@@ -45,10 +45,10 @@ Here are accuracy of some offline handwritten mathematical expression recognitio
 
 System|Exact|<=1 error|<= 2 errors|Structural correct|Remark
 ---|---|---|---|---|---
-USTC, WAP|42.0%|55.1%|59.3%|-|Ensemble modeling is applied(5 models)
-Stroke extractor + TAP|43.07%|56.67%|62.95%|64.95%|
-TDTU, CNN-BLSTM-LSTM|45.60%|59.29%|65.65%|-|Data augmentation is applied(36.27% before data augmentation)
-USTC, MSD|50.1%|63.8%|67.4%|-|Ensemble modeling is applied(5 models)
+[USTC, WAP](https://doi.org/10.1016/j.patcog.2017.06.017)|42.0%|55.1%|59.3%|-|Ensemble modeling is applied(5 models)
+[Stroke extractor](http://doi.org/10.1109/ACCESS.2020.2984627) + [TAP](https://doi.org/10.1109/TMM.2018.2844689)|43.07%|56.67%|62.95%|64.95%|
+[TDTU, CNN-BLSTM-LSTM](https://doi.org/10.1016/j.patrec.2019.09.002)|45.60%|59.29%|65.65%|-|Data augmentation is applied(36.27% before data augmentation)
+[USTC, MSD](https://doi.org/10.1109/ICPR.2018.8546031)|50.1%|63.8%|67.4%|-|Ensemble modeling is applied(5 models)
 
 It should be noted that online accuracy of this version of TAP is 43.68%, which is close to its offline counterpart. The point is that if we have trained an online recognizer with extracted strokes, we can obtain an offline recognizer which is nearly as good as it.
 
@@ -68,12 +68,14 @@ If you are interested in online mathematical expression recognition, you can rea
 If you are interested in stroke extraction, you can read [Stroke extraction for offline handwritten mathematical expression recognition](https://arxiv.org/abs/1905.06749):
 
 ```bibtex
-@misc{1905.06749,
-Author = {Chungkwong Chan},
-Title = {Stroke extraction for offline handwritten mathematical expression recognition},
-Year = {2019},
-Eprint = {arXiv:1905.06749},
-}
+@ARTICLE{9051736,
+  author={C. {Chan}},
+  journal={IEEE Access}, 
+  title={Stroke Extraction for Offline Handwritten Mathematical Expression Recognition}, 
+  year={2020},
+  volume={8},
+  pages={61565-61575},
+  doi={10.1109/ACCESS.2020.2984627}}
 ```
 
 # 基于笔划提取和TAP的脱机手写数学公式识别
@@ -123,10 +125,10 @@ Eprint = {arXiv:1905.06749},
 
 系统|完全正确|至多一个错误|至多两个错误|结构正确|注记
 ---|---|---|---|---|---
-USTC, WAP|42.0%|55.1%|59.3%|-|组合了五个模型
-Stroke extractor + TAP|43.07%|56.67%|62.95%|64.95%|
-TDTU, CNN-BLSTM-LSTM|45.60%|59.29%|65.65%|-|使用了扩充数据集（原数据集上为36.27%）
-USTC, MSD|50.1%|63.8%|67.4%|-|组合了五个模型
+[USTC, WAP](https://doi.org/10.1016/j.patcog.2017.06.017)|42.0%|55.1%|59.3%|-|组合了五个模型
+[笔划提取](http://doi.org/10.1109/ACCESS.2020.2984627) + [TAP](https://doi.org/10.1109/TMM.2018.2844689)|43.07%|56.67%|62.95%|64.95%|
+[TDTU, CNN-BLSTM-LSTM](https://doi.org/10.1016/j.patrec.2019.09.002)|45.60%|59.29%|65.65%|-|使用了扩充数据集（原数据集上为36.27%）
+[USTC, MSD](https://doi.org/10.1109/ICPR.2018.8546031)|50.1%|63.8%|67.4%|-|组合了五个模型
 
 值得注意的是，这版本TAP的联机识别准确率为43.68%，与脱机识别准确率相若。这表明通过用提取出的笔划去训练一个联机识别系统，可以得到一个准确度与之相当的脱机识别系统。
 
@@ -146,10 +148,12 @@ USTC, MSD|50.1%|63.8%|67.4%|-|组合了五个模型
 如果你对笔划提取算法感兴趣，请参阅[Stroke extraction for offline handwritten mathematical expression recognition](https://arxiv.org/abs/1905.06749):
 
 ```bibtex
-@misc{1905.06749,
-Author = {Chungkwong Chan},
-Title = {Stroke extraction for offline handwritten mathematical expression recognition},
-Year = {2019},
-Eprint = {arXiv:1905.06749},
-}
+@ARTICLE{9051736,
+  author={C. {Chan}},
+  journal={IEEE Access}, 
+  title={Stroke Extraction for Offline Handwritten Mathematical Expression Recognition}, 
+  year={2020},
+  volume={8},
+  pages={61565-61575},
+  doi={10.1109/ACCESS.2020.2984627}}
 ```
